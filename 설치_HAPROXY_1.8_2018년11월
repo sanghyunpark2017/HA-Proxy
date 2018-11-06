@@ -1,9 +1,8 @@
 
 HA-Proxy 홈페이지에서 소스파일 다운로드 받아 컴파일 하여 설치
 
-올해 
-6월에는 1.8.10 버전이었으나, 
-11월 현재는 1.8.14 버전임
+올해 6월에는 1.8.10 버전이었으나, 11월 현재는 1.8.14 버전임
+
 
 
 ##################################################################
@@ -103,26 +102,7 @@ backend http_30050
    server t1pkubework3 10.10.29.41:30010 check inter 1000 fall 3 rise 1
 
 
-#***********************
-# HAProxy 모니터링 설정
-#***********************
 
-listen stats
-  bind :8888
-  mode http
-  log global
-  maxconn 10
-  clitimeout 100s
-  srvtimeout 100s
-  contimeout 100s
-  timeout queue 100s
-
-  stats enable
-  stats hide-version
-  stats refresh 30s
-  stats show-node
-  stats auth admin:1234
-  stats uri /haproxy
 --------------------------------------------------------------------------------------------------
 
 
