@@ -1,6 +1,22 @@
 
-HA-Proxy 홈페이지에서 소스파일 다운로드 받아 컴파일 하여 설치
+############
+# 개요
+############
+-security logs kibana 구성 중 작업
+-HAPROXY 이중화 구성 (Active/Standby)
+-이중화 솔루션으로는 keep alived를 사용함
+ http://www.keepalived.org/download.html
+-keepalived를 설치(컴파일)하기 위해서는 openssl이 설치도이ㅓ 있어야 함
 
+ 
+
+
+
+
+
+
+
+HA-Proxy 홈페이지에서 소스파일 다운로드 받아 컴파일 하여 설치
 올해 6월에는 1.8.10 버전이었으나, 11월 현재는 1.8.14 버전임
 
 
