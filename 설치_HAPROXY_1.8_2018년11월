@@ -97,9 +97,9 @@ frontend http_front
 backend http_30050
    balance roundrobin
    option forwardfor
-   server t1pkubework1 10.10.29.39:30010 check inter 1000 fall 3 rise 1
-   server t1pkubework2 10.10.29.40:30010 check inter 1000 fall 3 rise 1
-   server t1pkubework3 10.10.29.41:30010 check inter 1000 fall 3 rise 1
+   server t1pkubework1 10.10.29.39:30050 check inter 1000 fall 3 rise 1
+   server t1pkubework2 10.10.29.40:30050 check inter 1000 fall 3 rise 1
+   server t1pkubework3 10.10.29.41:30050 check inter 1000 fall 3 rise 1
 
 
 
