@@ -5,6 +5,7 @@
 -통합보안로그의 kibana, logstash를 kube로 구성함
 -haproxy는 처음으로 HA(keepalived)로 구성함
 -haproxy 버전은 11월 현재 최신 stable 버전 1.8.14 사용
+-script를 root 권한으로 실행 시 보안홀이기에 데몬 기동 할 때 경고문고 "keepalived_script" 계정이 없다고 나오나 무시
 
 ######################
 # FAIL OVER/BACK
